@@ -7,8 +7,7 @@ class Backer
   end
 
   def back_project(title)
-    @backed_projects<< title
-    title = Project.new(title)
-    title.backers<< self
+    @backed_projects<< Project.new(title)
+
   end
 end
