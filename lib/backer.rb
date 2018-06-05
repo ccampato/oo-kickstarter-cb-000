@@ -8,5 +8,7 @@ class Backer
 
   def back_project(title)
     @backed_projects<< title
+    title = Project.new(title)
+    title.backers<< self
   end
 end
