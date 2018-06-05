@@ -1,3 +1,4 @@
+require "pry"
 class Project
   attr_accessor :backers, :title
 
